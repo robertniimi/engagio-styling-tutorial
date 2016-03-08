@@ -1,0 +1,17 @@
+.transition-wrapper {
+  .transition-div {
+    background-color: red;
+
+    // height: 100px;
+    max-height: 1000px;
+
+    transition: max-height 2s;
+
+    &.transition {
+      max-height: 0px;
+      // height: 200px;
+      // background-color: orange;
+    }
+  }
+
+}

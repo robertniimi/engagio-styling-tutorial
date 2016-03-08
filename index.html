@@ -1,0 +1,126 @@
+<!doctype html>
+  <head lang="en">
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <h2>Horizontal Align</h2>
+    <div>
+      <h3>Inline/Inline Block</h3>
+      <div class='horizontal-center'>
+        <div class='inline-block'>
+          --> Horizontally Center Me <--
+        </div>
+      </div>
+      <h3>Block</h3>
+      <div class='horizontal-center'>
+        <div class='block'>
+          --> Horizontally Center Me <--
+        </div>
+      </div>
+      <h3>SASS Block</h3>
+      <div class='sass-horizontal-center'>
+        <div class='block'>
+          --> Horizontally Center Me <--
+        </div>
+      </div>
+    </div>
+
+    <h2>Vertical Align</h2>
+    <div>
+      <h3>Table Cell</h3>
+      <div class='vertical-container'>
+        <div class='table'>
+          <div class='cell'>
+            --> Vertically Center Me <--
+          </div>
+        </div>
+      </div>
+      <h3>Line Height</h3>
+      <div class='vertical-container'>
+        <div class='line-height'>
+          --> Vertically Center Me <--
+        </div>
+      </div>
+      <h3>Sass Line Height</h3>
+      <div class='sass-vertical-container'>
+        <div class='line-height'>
+          --> Vertically Center Me <--
+        </div>
+      </div>
+    </div>
+
+    <h2>Types</h2>
+    <div>
+      <h3>Inline</h3>
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class='inline-span'>Nostrum deleniti at</span>, saepe accusantium commodi itaque ipsum quod eveniet hic porro adipisci iste odio cum magnam quis ex maxime temporibus atque!
+      </div>
+      <h3>Block</h3>
+      <div class='block-div'>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam tenetur consequuntur adipisci, repellat nesciunt dolorem illo molestiae dolor sint quaerat qui, minima deserunt error aperiam, incidunt molestias ex. Illum, hic.
+      </div>
+      <h3>Inline-Block</h3>
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. <div class='inline-block-div'>Reprehenderit nihil vel cum quidem</div> dignissimos quae commodi dolorum ipsum sapiente. Eos totam soluta rem numquam. Iste incidunt ipsam nemo quas, itaque.
+      </div>
+    </div>
+
+    <h2>Specificity</h2>
+    <div>
+      <div class='spec-wrapper-1'>
+        <div class='spec-nested'>
+          <p id='spec-1-text-id' class='spec-text'>Style Me</p>
+        </div>
+      </div>
+      <div class='spec-wrapper-2'>
+        <div class='spec-nested'>
+          <p id='spec-2-text-id' class='spec-text'>Style Me</p>
+        </div>
+      </div>
+    </div>
+
+    <h2>Position Absolute/Relative</h2>
+    <div class='position-wrapper'>
+      <div class='layer layer-1'>
+        <div class='layer layer-2'>
+          <div class='layer layer-3'>
+            <div class='position-content'>Position Me</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2>Transitions</h2>
+    <div class='transition-wrapper'>
+      <div class='transition-div'>
+        Hello
+      </div>
+    </div>
+
+    <h2>Border Box</h2>
+    <div>
+      <div class='outer-box'>
+        <div class='inner-box-1'></div>
+        <div class='inner-box-2'></div>
+      </div>
+
+
+<!--     </div>
+    <h2>Flex Border Box</h2>
+    <div class='flex-outer-box'>
+      <div class='inner-box-1'></div>
+      <div class='inner-box-2'></div>
+    </div> -->
+    <script src='https://code.jquery.com/jquery-2.2.1.min.js'></script>
+    <script>
+      $('.transition-div').click(function() {
+        $(this).toggleClass('transition');
+      })
+    </script>
+  </body>
+</html>

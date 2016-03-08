@@ -1,0 +1,24 @@
+.outer-box {
+  $outer-side: 100px;
+  display: flex;
+  height: $outer-side;
+  width: $outer-side;
+  border: 10px solid orange;
+  .inner-box {
+    box-sizing: border-box;
+    border: 10px solid black;
+    display: inline-block;
+    height: $outer-side;
+    width: $outer-side / 2;
+  }
+
+  .inner-box-1 {
+    @extend .inner-box;
+    background-color: red;
+  }
+
+  .inner-box-2 {
+    @extend .inner-box;
+    background-color: green;
+  }
+}

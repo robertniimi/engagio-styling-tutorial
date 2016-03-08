@@ -1,0 +1,38 @@
+/*Horizontal Align*/
+.horizontal-center {
+  text-align: center;
+}
+
+.horizontal-center .inline-block {
+  border: 1px dashed red;
+  display: inline-block;
+}
+
+.horizontal-center .block {
+  border: 1px dashed orange;
+  width: 210px;
+  margin: 0 auto 0 auto;
+}
+
+/*Vertical Align*/
+.vertical-container {
+  border: 1px dashed red;
+  height: 60px;
+}
+
+.vertical-container .table {
+  height: 60px;
+  display: table;
+}
+
+.vertical-container .table .cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.vertical-container .line-height {
+  height: 60px;
+  line-height: 60px;
+  /*vertical-align: middle;*/
+}
+

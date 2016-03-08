@@ -1,0 +1,25 @@
+/* id > class */
+#spec-1-text-id {
+  color: green;
+}
+
+/* more classes > class */
+.spec-wrapper-2 {
+  .spec-text {
+    color: black;
+  }
+}
+
+/* class > tag */
+.spec-text {
+  color: red;
+}
+
+p {
+  color: blue;
+}
+
+/* last declaration wins */
+p {
+  color: cyan;
+}

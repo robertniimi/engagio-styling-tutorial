@@ -1,0 +1,49 @@
+.position-wrapper {
+  position: relative;
+
+  border: 1px dashed orange;
+  $wrapper-side: 500px;
+  $change-length: 80px;
+  height: $wrapper-side;
+  width: $wrapper-side;
+
+  .layer {
+    margin: $change-length / 2 auto;
+  }
+
+  .layer-1 {
+    position: relative;
+
+    border: 1px dashed green;
+    $layer-1-side: $wrapper-side - $change-length;
+    height: $layer-1-side;
+    width: $layer-1-side;
+    .layer-2 {
+      position: relative;
+
+      border: 1px dashed blue;
+      $layer-2-side: $layer-1-side - $change-length;
+      height: $layer-2-side;
+      width: $layer-2-side;
+      .layer-3 {
+        position: relative;
+
+        border: 1px dashed red;
+        $layer-3-side: $layer-2-side - $change-length;
+        height: $layer-3-side;
+        width: $layer-3-side;
+
+        .position-content {
+          position: absolute;
+
+          top: 10px;
+          left: 10px;
+
+          display: inline-block;
+          padding: 5px 10px;
+          background-color: yellow;
+        }
+      }
+    }
+  }
+}

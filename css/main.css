@@ -1,0 +1,90 @@
+.sass-vertical-container {
+  border: 1px dashed orange;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.outer-box {
+  display: flex;
+  height: 100px;
+  width: 100px;
+  border: 10px solid orange; }
+  .outer-box .inner-box, .outer-box .inner-box-1, .outer-box .inner-box-2 {
+    box-sizing: border-box;
+    border: 10px solid black;
+    display: inline-block;
+    height: 100px;
+    width: 50px; }
+  .outer-box .inner-box-1 {
+    background-color: red; }
+  .outer-box .inner-box-2 {
+    background-color: green; }
+
+.position-wrapper {
+  position: relative;
+  border: 1px dashed orange;
+  height: 500px;
+  width: 500px; }
+  .position-wrapper .layer {
+    margin: 40px auto; }
+  .position-wrapper .layer-1 {
+    position: relative;
+    border: 1px dashed green;
+    height: 420px;
+    width: 420px; }
+    .position-wrapper .layer-1 .layer-2 {
+      position: relative;
+      border: 1px dashed blue;
+      height: 340px;
+      width: 340px; }
+      .position-wrapper .layer-1 .layer-2 .layer-3 {
+        position: relative;
+        border: 1px dashed red;
+        height: 260px;
+        width: 260px; }
+        .position-wrapper .layer-1 .layer-2 .layer-3 .position-content {
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          display: inline-block;
+          padding: 5px 10px;
+          background-color: yellow; }
+
+/* id > class */
+#spec-1-text-id {
+  color: green; }
+
+/* more classes > class */
+.spec-wrapper-2 .spec-text {
+  color: black; }
+
+/* class > tag */
+.spec-text {
+  color: red; }
+
+p {
+  color: blue; }
+
+/* last declaration wins */
+p {
+  color: cyan; }
+
+.inline-span {
+  height: 100px;
+  border: 1px dashed orange; }
+
+.block-div {
+  border: 1px dashed red; }
+
+.inline-block-div {
+  display: inline-block;
+  height: 100px;
+  border: 1px dashed green; }
+
+.transition-wrapper .transition-div {
+  background-color: red;
+  max-height: 1000px;
+  transition: max-height 2s; }
+  .transition-wrapper .transition-div.transition {
+    max-height: 0px; }
